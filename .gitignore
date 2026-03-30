@@ -23,7 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 src/components/cart/
-src/components/Hero/
 
 
 
