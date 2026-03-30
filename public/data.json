@@ -1,0 +1,162 @@
+[
+  {
+    "id": "01",
+    "name": "Resume Builder Pro",
+    "description": "AI-powered resume builder with ATS-friendly templates and real-time suggestions.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Cover letter generator"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": "02",
+    "name": "DataVault Storage",
+    "description": "Secure cloud storage with end-to-end encryption and team collaboration tools.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "5 TB storage",
+      "End-to-end encryption",
+      "Team sharing",
+      "Version history"
+    ],
+    "icon": "🗄️"
+  },
+  {
+    "id": "03",
+    "name": "DesignKit Lifetime",
+    "description": "Complete design toolkit with vector tools, mockup assets, and font library.",
+    "price": 149,
+    "period": "one-time",
+    "tag": "Featured",
+    "tagType": "featured",
+    "features": [
+      "Unlimited projects",
+      "10,000+ assets",
+      "Font library",
+      "Export SVG/PNG/WebP"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": "04",
+    "name": "CodeScan AI",
+    "description": "Automated code review tool that catches bugs and suggests improvements instantly.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "15+ languages",
+      "PR integration",
+      "Security audits",
+      "CI/CD pipeline support"
+    ],
+    "icon": "🔍"
+  },
+  {
+    "id": "05",
+    "name": "SEO Booster Annual",
+    "description": "Full-suite SEO platform with keyword tracking, backlink analysis, and competitor insights.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "500 keyword tracks",
+      "Backlink monitor",
+      "Site audit",
+      "Daily rank updates"
+    ],
+    "icon": "📈"
+  },
+  {
+    "id": "06",
+    "name": "EmailFlow",
+    "description": "Smart email marketing platform with AI-generated copy and campaign automation.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited emails",
+      "AI copywriting",
+      "A/B testing",
+      "Analytics dashboard"
+    ],
+    "icon": "✉️"
+  },
+  {
+    "id": "07",
+    "name": "VoiceStudio",
+    "description": "Professional text-to-speech studio with 120+ voices and multilingual support.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "120+ voices",
+      "30 languages",
+      "Commercial license",
+      "API access"
+    ],
+    "icon": "🎙️"
+  },
+  {
+    "id": "08",
+    "name": "ProjectPulse",
+    "description": "Agile project management with sprint boards, time tracking, and team reporting.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "Featured",
+    "tagType": "featured",
+    "features": [
+      "Unlimited projects",
+      "Sprint planning",
+      "Time tracker",
+      "Slack & Jira sync"
+    ],
+    "icon": "🗂️"
+  },
+  {
+    "id": "09",
+    "name": "PhotoEnhance AI",
+    "description": "One-click photo restoration and enhancement powered by deep learning models.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Limited",
+    "tagType": "limited",
+    "features": [
+      "4K upscaling",
+      "Noise removal",
+      "Color correction",
+      "Batch processing"
+    ],
+    "icon": "🖼️"
+  },
+  {
+    "id": "10",
+    "name": "LearnPath Pro",
+    "description": "Personalized online learning platform with certifications and mentor access.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "500+ courses",
+      "Certificates",
+      "Live mentorship",
+      "Offline downloads"
+    ],
+    "icon": "🎓"
+  }
+]
