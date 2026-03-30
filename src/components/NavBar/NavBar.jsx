@@ -21,7 +21,6 @@ const NavBar = ({cartItems}) => {
           ))}
         </ul>
         <div className="flex items-center gap-2">
-          {/* Cart with badge */}
           <div className="relative">
             <IoCartOutline className="text-2xl" />
             <span className="absolute -top-2 -right-2 w-4 h-4 flex items-center justify-center bg-violet-600 text-white text-[10px] font-bold rounded-full">

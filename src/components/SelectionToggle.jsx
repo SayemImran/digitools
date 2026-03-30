@@ -12,18 +12,18 @@ const SelectionToggle = ({ cartItems, promise, setCartItems }) => {
 
   return (
     <div className="flex flex-col items-center text-center gap-4 py-12 px-4">
-      {/* Title */}
+      
       <h2 className="text-4xl font-bold text-gray-900">
         Premium Digital Tools
       </h2>
 
-      {/* Subtitle */}
+     
       <p className="text-sm text-gray-500 max-w-sm leading-relaxed">
         Choose from our curated collection of premium digital products designed
         to boost your productivity and creativity.
       </p>
 
-      {/* Tabs */}
+      
       <div className="flex items-center gap-3 mt-2">
         <button
           className={selected === "products" ? activeClass : inactiveClass}
@@ -39,7 +39,7 @@ const SelectionToggle = ({ cartItems, promise, setCartItems }) => {
         </button>
       </div>
 
-      {/* Conditional Content */}
+      
       <div className="w-full mt-4">
   {selected === "products" ? (
     <div>
@@ -54,8 +54,8 @@ const SelectionToggle = ({ cartItems, promise, setCartItems }) => {
   ) : (
     <Cart
       cartItems={cartItems}
-      onRemove={(id) =>
-        setCartItems((prev) => prev.filter((item) => item.id !== id))
+      onRemove={(name) =>
+        setCartItems((prev) => prev.filter((item) => item.name !== name))
       }
     />
   )}

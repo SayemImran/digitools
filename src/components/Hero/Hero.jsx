@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 px-4 py-8">
 
-      {/* Left — Text Content */}
+
       <div className="flex flex-col justify-center space-y-3 text-center md:text-left items-center md:items-start">
 
         <div className="bg-[#E1E7FF] flex gap-2 w-fit md:w-2/6 rounded-2xl px-2 py-1">
@@ -40,7 +40,7 @@ const Hero = () => {
 
       </div>
 
-      {/* Right — Image */}
+     
       <div className="flex items-center justify-center">
         <img src={bgImage} alt="hero Image" className="w-full max-w-md md:max-w-full" />
       </div>

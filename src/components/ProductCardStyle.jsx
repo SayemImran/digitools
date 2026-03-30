@@ -50,9 +50,8 @@ const ProductCardStyle = ({
   setCartItems,
 }) => {
   const tc = tagConfig[tagType] ?? tagConfig.popular;
-  const formattedPrice = `$${price % 1 === 0 ? price : price.toFixed(2)}`;
+  const formattedPrice = `$${price}`;
 
-  // ✅ Fixed: includes all fields + duplicate guard + functional state update
   const handleAddToCart = () => {
     const alreadyInCart = cartItems.some((el) => el.name === name);
     if (alreadyInCart) return;
@@ -73,7 +72,6 @@ const ProductCardStyle = ({
 
   return (
     <div className="relative rounded-2xl border border-gray-200 bg-white p-6 flex flex-col gap-4 shadow-sm px-1.5 mx-1.5">
-      {/* Tag — top right corner */}
       <div className="absolute top-4 right-4">
         <span
           className={`inline-flex items-center px-3 py-1 rounded-full text-[11px] font-semibold border ${tc.badge} ${tc.border}`}
@@ -81,13 +79,10 @@ const ProductCardStyle = ({
           {tag}
         </span>
       </div>
-
-      {/* Icon */}
       <div className="w-10 h-10 flex items-center justify-center text-2xl">
         {icon}
       </div>
 
-      {/* Name + Description */}
       <div className="flex flex-col gap-1">
         <h3 className="text-lg font-bold text-gray-900 leading-snug pr-16">
           {name}
@@ -95,7 +90,6 @@ const ProductCardStyle = ({
         <p className="text-sm text-gray-500 leading-relaxed">{description}</p>
       </div>
 
-      {/* Price */}
       <div className="flex items-baseline gap-0.5">
         <span className="text-2xl font-extrabold text-gray-900">
           {formattedPrice}
@@ -105,7 +99,7 @@ const ProductCardStyle = ({
         </span>
       </div>
 
-      {/* Features */}
+
       <ul className="flex flex-col gap-2">
         {features.map((f, i) => (
           <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
@@ -115,7 +109,6 @@ const ProductCardStyle = ({
         ))}
       </ul>
 
-      {/* CTA — shows "Added" when already in cart */}
       <button
         onClick={handleAddToCart}
         disabled={isInCart}

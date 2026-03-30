@@ -11,13 +11,13 @@ const Stats = () => {
         {stats.map((stat, index) => (
           <div key={stat.label} className="flex items-center gap-6 sm:gap-10 w-full sm:w-auto justify-center">
 
-            {/* Stat Item */}
+           
             <div className="flex flex-col items-center sm:items-start gap-1">
               <span className="text-4xl font-bold text-white">{stat.value}</span>
               <span className="text-sm text-white/70">{stat.label}</span>
             </div>
 
-            {/* Divider — between items only */}
+            
             {index < stats.length - 1 && (
               <div className="hidden sm:block h-10 w-px bg-white/30" />
             )}

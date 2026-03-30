@@ -1,6 +1,6 @@
 [
   {
-    "id": "01",
+    "id": 1,
     "name": "Resume Builder Pro",
     "description": "AI-powered resume builder with ATS-friendly templates and real-time suggestions.",
     "price": 9.99,
@@ -16,7 +16,7 @@
     "icon": "📄"
   },
   {
-    "id": "02",
+    "id": 2,
     "name": "DataVault Storage",
     "description": "Secure cloud storage with end-to-end encryption and team collaboration tools.",
     "price": 4.99,
@@ -32,7 +32,7 @@
     "icon": "🗄️"
   },
   {
-    "id": "03",
+    "id": 3,
     "name": "DesignKit Lifetime",
     "description": "Complete design toolkit with vector tools, mockup assets, and font library.",
     "price": 149,
@@ -48,7 +48,7 @@
     "icon": "🎨"
   },
   {
-    "id": "04",
+    "id": 4,
     "name": "CodeScan AI",
     "description": "Automated code review tool that catches bugs and suggests improvements instantly.",
     "price": 19.99,
@@ -64,7 +64,7 @@
     "icon": "🔍"
   },
   {
-    "id": "05",
+    "id": 5,
     "name": "SEO Booster Annual",
     "description": "Full-suite SEO platform with keyword tracking, backlink analysis, and competitor insights.",
     "price": 99,
@@ -80,7 +80,7 @@
     "icon": "📈"
   },
   {
-    "id": "06",
+    "id": 6,
     "name": "EmailFlow",
     "description": "Smart email marketing platform with AI-generated copy and campaign automation.",
     "price": 14.99,
@@ -96,7 +96,7 @@
     "icon": "✉️"
   },
   {
-    "id": "07",
+    "id": 7,
     "name": "VoiceStudio",
     "description": "Professional text-to-speech studio with 120+ voices and multilingual support.",
     "price": 49,
@@ -112,7 +112,7 @@
     "icon": "🎙️"
   },
   {
-    "id": "08",
+    "id": 8,
     "name": "ProjectPulse",
     "description": "Agile project management with sprint boards, time tracking, and team reporting.",
     "price": 79,
@@ -128,7 +128,7 @@
     "icon": "🗂️"
   },
   {
-    "id": "09",
+    "id": 9,
     "name": "PhotoEnhance AI",
     "description": "One-click photo restoration and enhancement powered by deep learning models.",
     "price": 29,
@@ -144,7 +144,7 @@
     "icon": "🖼️"
   },
   {
-    "id": "10",
+    "id": 10,
     "name": "LearnPath Pro",
     "description": "Personalized online learning platform with certifications and mentor access.",
     "price": 12.99,
