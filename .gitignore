@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 src/components/cart/
 src/components/Hero/
-src/components/Navbar/
+
 
 
 
