@@ -47,14 +47,29 @@ const ProductCardStyle = ({
   features,
   icon,
   cartItems,
-  setCartItems
+  setCartItems,
 }) => {
   const tc = tagConfig[tagType] ?? tagConfig.popular;
   const formattedPrice = `$${price % 1 === 0 ? price : price.toFixed(2)}`;
+
+  // ✅ Fixed: includes all fields + duplicate guard + functional state update
   const handleAddToCart = () => {
-    const newItem = { name, price };
-    setCartItems([...cartItems, newItem]);
+    const alreadyInCart = cartItems.some((el) => el.name === name);
+    if (alreadyInCart) return;
+    const newItem = {
+      name,
+      description,
+      price,
+      period,
+      tag,
+      tagType,
+      features,
+      icon,
+    };
+    setCartItems((prev) => [...prev, newItem]);
   };
+
+  const isInCart = cartItems.some((el) => el.name === name);
 
   return (
     <div className="relative rounded-2xl border border-gray-200 bg-white p-6 flex flex-col gap-4 shadow-sm px-1.5 mx-1.5">
@@ -100,9 +115,18 @@ const ProductCardStyle = ({
         ))}
       </ul>
 
-      {/* CTA */}
-      <button onClick={handleAddToCart} className="mt-2 w-full py-3 rounded-full bg-violet-600 hover:bg-violet-700 active:scale-95 text-white text-sm font-semibold tracking-wide transition-all duration-150 cursor-pointer">
-        Buy Now
+      {/* CTA — shows "Added" when already in cart */}
+      <button
+        onClick={handleAddToCart}
+        disabled={isInCart}
+        className={`mt-2 w-full py-3 rounded-full text-white text-sm font-semibold tracking-wide transition-all duration-150 cursor-pointer
+          ${
+            isInCart
+              ? "bg-gray-300 cursor-not-allowed"
+              : "bg-violet-600 hover:bg-violet-700 active:scale-95"
+          }`}
+      >
+        {isInCart ? "Added" : "Buy Now"}
       </button>
     </div>
   );

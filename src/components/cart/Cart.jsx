@@ -15,7 +15,7 @@ const Cart = ({ cartItems = [], onRemove }) => {
         ) : (
           cartItems.map((item) => (
             <div
-              key={item.id}
+              key={item.name}
               className="flex items-center justify-between bg-gray-50 rounded-xl px-4 py-4"
             >
               {/* Icon + Name + Price */}
@@ -33,7 +33,8 @@ const Cart = ({ cartItems = [], onRemove }) => {
 
               {/* Remove */}
               <button
-                onClick={() => onRemove && onRemove(item.id)}
+                // ✅ Fixed: using el to avoid variable shadowing
+                onClick={() => onRemove && onRemove(item.name)}
                 className="text-sm font-semibold text-red-400 hover:text-red-600 transition-colors duration-150 cursor-pointer"
               >
                 Remove
