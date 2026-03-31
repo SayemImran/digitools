@@ -80,6 +80,7 @@ http://localhost:5173
 ```
 digitools/
 ├── public/
+|   └── data.json
 ├── src/
 │   ├── assets/                  # Images and icons
 │   ├── components/
