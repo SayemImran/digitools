@@ -8,6 +8,8 @@ import SelectionToggle from './components/SelectionToggle';
 import { ToastContainer } from 'react-toastify';
 import GettingStarted from './components/layout/GettingStarted';
 import Pricing from './components/layout/Pricing';
+import CallToAction from './components/layout/CallToAction';
+import Footer from './components/layout/Footer';
 
 const getDataPromise = fetch('/data.json').then(res => res.json());
 function App() {
@@ -21,6 +23,8 @@ function App() {
     <SelectionToggle cartItems={cartItems} promise={getDataPromise} setCartItems={setCartItems} />
     <GettingStarted/>
     <Pricing/>
+    <CallToAction/>
+    <Footer/>
     </>
   )
 }
