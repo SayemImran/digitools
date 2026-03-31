@@ -57,6 +57,7 @@ const SelectionToggle = ({ cartItems, promise, setCartItems }) => {
       onRemove={(name) =>
         setCartItems((prev) => prev.filter((item) => item.name !== name))
       }
+      setCartItems={setCartItems}
     />
   )}
 </div>

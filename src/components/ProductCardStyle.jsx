@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const tagConfig = {
   popular: {
     badge: "bg-purple-100 text-purple-600",
@@ -65,6 +67,7 @@ const ProductCardStyle = ({
       features,
       icon,
     };
+    toast(`${name} added to cart!`, { type: "success" });
     setCartItems((prev) => [...prev, newItem]);
   };
 
