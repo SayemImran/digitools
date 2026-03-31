@@ -6,6 +6,8 @@ import Hero from './components/Hero/Hero';
 import Stats from './components/Hero/Stats';
 import SelectionToggle from './components/SelectionToggle';
 import { ToastContainer } from 'react-toastify';
+import GettingStarted from './components/layout/GettingStarted';
+import Pricing from './components/layout/Pricing';
 
 const getDataPromise = fetch('/data.json').then(res => res.json());
 function App() {
@@ -17,6 +19,8 @@ function App() {
     <Stats/>
     <ToastContainer/>
     <SelectionToggle cartItems={cartItems} promise={getDataPromise} setCartItems={setCartItems} />
+    <GettingStarted/>
+    <Pricing/>
     </>
   )
 }

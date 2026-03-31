@@ -9,18 +9,18 @@ const NavBar = ({cartItems}) => {
   return (
     <nav>
 
-      <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-4">
+      <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-4 ">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-[#4F39F6] to-purple-400 bg-clip-text text-transparent">
           DigiTools
         </h1>
-        <ul className="hidden md:flex gap-4">
+        <ul className="hidden md:flex gap-4 font-semibold">
           {navItems.map((item) => (
             <li key={item}>
               <a href={`#${item}`}>{item}</a>
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 font-semibold">
           <div className="relative">
             <IoCartOutline className="text-2xl" />
             <span className="absolute -top-2 -right-2 w-4 h-4 flex items-center justify-center bg-violet-600 text-white text-[10px] font-bold rounded-full">
