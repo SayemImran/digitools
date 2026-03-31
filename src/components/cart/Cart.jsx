@@ -12,7 +12,7 @@ const Cart = ({ cartItems, onRemove, setCartItems }) => {
   };
 
   return (
-    <div className="w-full border border-gray-200 rounded-2xl p-6 flex flex-col gap-4 bg-white">
+    <div className="max-w-7xl mx-auto border border-gray-200 rounded-2xl p-6 flex flex-col gap-4 bg-white">
       <h2 className="text-xl font-bold text-gray-900">Your Cart</h2>
       <div className="flex flex-col gap-3">
         {cartItems.length === 0 ? (
@@ -40,12 +40,8 @@ const Cart = ({ cartItems, onRemove, setCartItems }) => {
 
               <button
                 onClick={() => {
-                  console.log("clicked:", item.id);
-                  console.log(
-                    "all ids:",
-                    cartItems.map((i) => i.id),
-                  );
                   onRemove && onRemove(item.name);
+                  toast(`${item.name} removed from cart.`, { type: "error" });
                 }}
                 className="text-sm font-semibold text-red-400 hover:text-red-600 transition-colors duration-150 cursor-pointer"
               >
@@ -62,10 +58,9 @@ const Cart = ({ cartItems, onRemove, setCartItems }) => {
           ${total.toFixed(2)}
         </span>
       </div>
-
       <button
         onClick={handleProceedToCheckout}
-        className="w-full py-4 rounded-xl bg-gradient-to-r from-[#4F39F6] to-purple-400 text-white text-sm font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 cursor-pointer"
+        className={`${cartItems.length > 0 ? 'mx-auto w-full md:max-w-5xl lg:max-w-7xl' : 'hidden'} py-4 rounded-xl bg-gradient-to-r from-[#4F39F6] to-purple-400 text-white text-sm font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 cursor-pointer`}
       >
         Proceed To Checkout
       </button>

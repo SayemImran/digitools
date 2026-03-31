@@ -122,7 +122,7 @@ const ProductCardStyle = ({
               : "bg-violet-600 hover:bg-violet-700 active:scale-95"
           }`}
       >
-        {isInCart ? "Added" : "Buy Now"}
+        {isInCart ? "Added to cart" : "Buy Now"}
       </button>
     </div>
   );

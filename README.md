@@ -36,9 +36,12 @@
 | Technology | Purpose |
 |---|---|
 | **ReactJS** | Frontend UI library |
+| **JavaScript(ES6+)** | For core logic implementation|
 | **Tailwind CSS** | Utility-first styling & responsive layout |
+| **DaisyUI** | Utility-first styling & responsive layout |
 | **React Icons** | Icon library (Instagram, Facebook, X, etc.) |
 | **React Toastify** | Toast notifications for user actions |
+| **JSON DATA** | JSON data for demo |
 
 ---
 
